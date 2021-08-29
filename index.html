@@ -1,1 +1,83 @@
-<h1 id="title">Tell Me About Afro Pop Music</h1>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <style>
+     body {
+        font-family: sans-serif;
+      padding-left: 25%;
+      padding-right: 23%;
+
+}
+
+label{font-size:18px;
+display: block;
+padding-bottom: 10px;
+
+}
+input,textarea,select {display: block;
+width:100%;
+padding-bottom:20px;
+}
+
+form{background-color: #005bea;
+  padding: 40px 40px 40px 40px;
+ }
+ #radio-button-area{
+   float: left;
+    background-color: red;
+     width: 50%;
+     height: 50%;
+ }
+ input[type=checkbox]:not(old) + label,
+ input[type=radio   ]:not(old) + label{
+   display      : inline-block;
+   margin-left  : -28px;
+   padding-left : 28px;
+  }
+
+
+     </style>
+
+   </head>
+
+   <body>
+
+    <h1 id="title">Tell Me About Afro Pop Music</h1>
+
+    <p id= "description"> This is a survey to tell us about afro pop music you like </p>
+    <form id="survey-form">
+    <label id="name-label" >  Name: </label><input type="text" name="name" id="name" required placeholder="First Name"></input><br>
+    <label id="email-label" >  Email: </label><input type="email" name="email" id="email" required placeholder="Best Email"></input><br>
+    <label id="number-label" >  Number:</label> <input type="number" name="number" id="number" min="0" max="10" required placeholder="Level of Likeness"></input><br>
+
+  <label id="nationality-label">Nationality:</label>
+      <select id="dropdown" name="nationality">
+      <option value="nigerian">Nigerian</option>
+      <option value="ghanian">Ghanian</option>
+      <option value="tanzanian">Tanzanian</option>
+      <option value="other">Other</option>
+       </select> <br>
+        <br>
+        <div id="radio-button-area">
+          <label id="gender-label">Gender:</label>
+        <input type="radio" class="radio-inline" name="gender" value="male">Male<br>
+        <input type="radio"  class="radio-inline"name="gender" value="female">Female<br>
+        <input type="radio"  class="radio-inline"name="gender" value="other">Other <br>
+        </div> <br>
+
+       <br> <br> <br><br> <br> <br> <br><br>
+      <label id="listen-time-label">Listen Time:</label>
+      <input type="checkbox" id="listen1" name="listen1" value="Morning">
+      <label for="listen1"> I listen to Afro pop in the Morning</label>
+      <input type="checkbox" id="listen2" name="listen2" value="Afternoon">
+      <label for="listen2"> I listen to Afro pop in the Afternoon</label>
+      <input type="checkbox" id="listen3" name="listen3" value="Night">
+      <label for="listen3"> I listen to Afro Pop at Night </label><br><br>
+       <label id="favorite-label">Favorite:</label>
+      <textarea placeholder="Afro pop Artist "></textarea> <br>
+
+      <input type="submit" id="submit">
+      </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
